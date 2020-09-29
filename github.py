@@ -7,11 +7,12 @@ class FuntionalTestRunner:
     def __init__(self, test_type="local", platform="desktop"):
         self.test_type = test_type
         self.platform = platform
+        print("Running test for %s..." % self.platform)
         self.driver = self.get_driver()
 
     def get_desired_caps(self):
-        build_name = "Sample testing Github"
-        build = "Test "
+        build_name = "Sample testing Github - %s" % (self.platform)
+        build = "Test Github teams page"
         # Only required for remote tests
         if self.platform == "mobile":
             return {
@@ -87,5 +88,5 @@ class FuntionalTestRunner:
             print(e)
             self.driver.quit()
 
-runner = FuntionalTestRunner("remote", "mobile")
-runner.run_session()
+FuntionalTestRunner("remote", "desktop").run_session()
+FuntionalTestRunner("remote", "mobile").run_session()
