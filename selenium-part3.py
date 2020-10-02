@@ -12,7 +12,7 @@ desired_capabilities = {
     'browser_version': 'latest',
     'os': 'OS X',
     'name': 'selenium-part3',
-    'build': 'Test Github teams page'
+    'build': 'Test Github teams page - IIIT'
 }
 
 driver = webdriver.Remote(

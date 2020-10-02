@@ -11,7 +11,7 @@ desired_capabilities = {
     'realMobile': 'true',
     'os_version': '13.0',
     'name': 'selenium-part6',
-    'build': 'Test Github teams page'
+    'build': 'Test Github teams page - IIIT'
 }
 
 driver = webdriver.Remote(

@@ -13,7 +13,7 @@ class FuntionalTestRunner:
         self.driver = self.get_driver()
 
     def get_desired_caps(self):
-        build_name = "Sample testing Github - %s" % (self.platform)
+        build_name = "Sample testing Github from testsuite - %s" % (self.platform)
         build = "Test Github teams page - IIIT"
         # Only required for remote tests
         if self.platform == "mobile":
