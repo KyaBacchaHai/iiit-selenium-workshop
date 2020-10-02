@@ -25,3 +25,5 @@ pip install -r requirements.txt
 export automate_username="<your_browserstack_username>"
 export automate_authkey="<your_browserstack_authkey>"
 ```
+* Install chromedriver from this [link](https://chromedriver.chromium.org/downloads)
+* Run the scripts like normal Python scripts
