@@ -1,3 +1,5 @@
+# Combined script for mobile/desktop
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -12,7 +14,7 @@ class FuntionalTestRunner:
 
     def get_desired_caps(self):
         build_name = "Sample testing Github - %s" % (self.platform)
-        build = "Test Github teams page"
+        build = "Test Github teams page - IIIT"
         # Only required for remote tests
         if self.platform == "mobile":
             return {
@@ -88,5 +90,6 @@ class FuntionalTestRunner:
             print(e)
             self.driver.quit()
 
+# FuntionalTestRunner("local", "desktop").run_session()
 FuntionalTestRunner("remote", "desktop").run_session()
 FuntionalTestRunner("remote", "mobile").run_session()

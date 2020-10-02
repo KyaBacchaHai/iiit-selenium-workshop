@@ -1,3 +1,5 @@
+# Assertion script with all three CTAs' title text assertion - iphone 11 working
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
